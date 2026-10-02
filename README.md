@@ -14,12 +14,13 @@ Access the Presentation [Here](https://docs.google.com/presentation/d/1gSYxaiWgZ
 
 ## Moderation Analysis- Calculate Correlation by Mental Health - Analyzed relationships between social media usage and addiction scores across mental health categories using Python and Pandas.
 
-- from pytexera import *
-import pandas as pd
+            #start of python code
+            from pytexera import *
+            import pandas as pd
 
-class ProcessTableOperator(UDFTableOperator):
-    def process_table(self, table: Table, port: int) -> Iterator[Optional[TableLike]]:
-        df: pd.DataFrame = table
+            class ProcessTableOperator(UDFTableOperator):
+            def process_table(self, table: Table, port: int) -> Iterator[Optional[TableLike]]:
+            df: pd.DataFrame = table
         
         # Calculate correlation for each mental health category
         results = []
@@ -46,11 +47,12 @@ class ProcessTableOperator(UDFTableOperator):
 
 ## Moderation Analysis - Mental Health Effect: Used Python and statistical modeling to standardize social media usage and mental health variables, create interaction terms, and evaluate relationships with addiction scores using regression analysis
 
-from pytexera import *
-import pandas as pd
-from sklearn.preprocessing import StandardScaler
+    #start of python code 
+    from pytexera import *
+    import pandas as pd
+    from sklearn.preprocessing import StandardScaler
 
-class ProcessTableOperator(UDFTableOperator):
+    class ProcessTableOperator(UDFTableOperator):
     def process_table(self, table: Table, port: int) -> Iterator[Optional[TableLike]]:
         df: pd.DataFrame = table
         
